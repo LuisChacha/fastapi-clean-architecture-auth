@@ -24,7 +24,7 @@ El código está organizado en capas para garantizar el desacoplamiento:
 
 1. **Clonar y configurar:**
    ```bash
-   git clone https://github.com/LuisChacha/fastapi-clean-architecture-auth.git
+   git clone git@github.com:LuisChacha/fastapi-clean-architecture-auth.git
    cd fastapi-clean-architecture-auth
    ```
 
