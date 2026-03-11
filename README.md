@@ -25,20 +25,47 @@ El código está organizado en capas para garantizar el desacoplamiento:
 1. **Clonar y configurar:**
    ```bash
    git clone https://github.com/LuisChacha/fastapi-clean-architecture-auth.git
-   cp .env.example .env
+   cd fastapi-clean-architecture-auth
    ```
 
-2. **Levantar infraestructura:**
+2. **Configurar el entorno virtual (venv):**
+   ```
+   # Crear el entorno
+   python3 -m venv venv
+   # Activarlo (Linux/macOS)
+   source venv/bin/activate
+   ```
+
+3. **Instalar dependencias:**
+   ```
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
+
+4. **Configurar variables de entorno:**
+   ```
+   cp .env.example .env
+   # No olvides editar el .env si necesitas cambiar alguna credencial
+   ```
+
+5. **Levantar infraestructura:**
    ```bash
    docker compose up -d 	
    ```
 
-3. **Ejecutar migraciones y servidor:**
+6. **Ejecutar migraciones y servidor:**
    ```bash
    alembic upgrade head
    uvicorn app.main:app --reload
    ```
 
-4. **Documentación Interactiva:**
+7. ** 🛠️ Ejecución del Proyecto**
+
+   Una vez configurado el entorno y la base de datos, inicia el servidor:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+
+8. **Documentación Interactiva:**
    Visita http://localhost:8000/docs para probar los endpoints de Registro, Login y Health Check.
 
