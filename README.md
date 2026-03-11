@@ -59,13 +59,13 @@ El código está organizado en capas para garantizar el desacoplamiento:
    uvicorn app.main:app --reload
    ```
 
-7. ** 🛠️ Ejecución del Proyecto**
+## 🛠️ Ejecución del Proyecto
 
    Una vez configurado el entorno y la base de datos, inicia el servidor:
    ```bash
    uvicorn app.main:app --reload
    ```
 
-8. **Documentación Interactiva:**
+**Documentación Interactiva:**
    Visita http://localhost:8000/docs para probar los endpoints de Registro, Login y Health Check.
 
